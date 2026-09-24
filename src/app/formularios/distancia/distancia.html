@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<br>
+DISTANCIAS
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <div class="mb-3">
+                    <form>
+                    
+                        <br>
+                         <div class="form-group pt-4">
+                            <label for="x2">Punto A</label>
+                            <input [(ngModel)]="x2" name="x2" type="text" class="form-control" id="x1" placeholder="Ingrese número 1">
+                        </div>
+                         <br>
+                         <div class="form-group pt-4">
+                            <label for="y2">Punto B</label>
+                            <input [(ngModel)]="y2" name="y2" type="text" class="form-control" id="x2" placeholder="Ingrese número 2">
+                        </div>
+                         <br>
+                         <div class="form-group pt-4">
+                            <label for="x1">Punto C</label>
+                            <input [(ngModel)]="x1" name="x1" type="text" class="form-control" id="y1" placeholder="Ingrese número 3">
+                        </div>
+                         <br>
+                         <div class="form-group pt-4">
+                            <label for="y1">Punto D</label>
+                            <input [(ngModel)]="y1" name="y1" type="text" class="form-control" id="y2" placeholder="Ingrese número 4">
+                        </div>
+
+                        <br>
+                        <button (click)="calcular()" type="button" class="btn btn-primary">
+                            Calcular Distancia
+                        </button>
+
+                    </form>
+                </div>
+                <div class="col-6">
+                    <h3>Resultado: {{resultado}} </h3>
+                </div>
+            </div>
+
+
+
+
+        </div>
+    </div>
+    
+</body>
+</html>
